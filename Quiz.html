@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quis Bahasa Jepang</title>
+    <link rel="stylesheet" href="Quiz.css" />
+  </head>
+  <body>
+    <div class="container" id="welcome">
+      <h2>Selamat Datang di Quis Bahasa Jepang!</h2>
+      <p>
+        Uji pengetahuanmu tentang bahasa Jepang dasar. Ada 6 soal, masing-masing
+        30 detik. Siap?
+      </p>
+      <button id="start">Mulai Quis</button>
+    </div>
+    <div class="container" id="quiz" style="display: none">
+      <div class="header">
+        <div class="progress">
+          Soal <span id="current">1</span>/<span id="total">6</span>
+        </div>
+        <div class="timer">Waktu: <span id="time">30</span> detik</div>
+        <h2 id="question">Quiz Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Question</label>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button id="submit">Submit</button>
+        <button id="next" disabled>Next</button>
+        <button id="reset">Ulangi Quis</button>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <script src="Quiz.js"></script>
+  </body>
+</html>
